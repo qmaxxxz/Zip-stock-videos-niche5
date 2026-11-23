@@ -43,7 +43,7 @@ jobs:
       - name: Buat Release kosong (tempat video diunggah)
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${{ steps.p.outputs.tag }}" --repo "$GITHUB_REPOSITORY" --prerelease --title "Video render #${{ github.run_number }}" --notes "Video hasil render. Unduh file MP4 di bagian Assets."
+        run: gh release create "${{ steps.p.outputs.tag }}" --repo "$GITHUB_REPOSITORY" --prerelease --title "Video render ${{ github.run_number }}" --notes "Video hasil render. Unduh file MP4 di bagian Assets."
 
   render:
     needs: plan
