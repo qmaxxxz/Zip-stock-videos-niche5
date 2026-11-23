@@ -1,0 +1,24 @@
+{
+  "name": "stock-videos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Video loop abstrak 4K (3840x2160) orisinal untuk stok, dirender lewat GitHub Actions",
+  "scripts": {
+    "render:silk": "node render.js --scene silk",
+    "render:terrain": "node render.js --scene terrain",
+    "render:aurora": "node render.js --scene aurora",
+    "render:hex": "node render.js --scene hex",
+    "render:ridges": "node render.js --scene ridges",
+    "render:car": "node render.js --scene car",
+    "render:turbines": "node render.js --scene turbines",
+    "render:qubit": "node render.js --scene qubit",
+    "render:bloom": "node render.js --scene bloom",
+    "render:cells": "node render.js --scene cells",
+    "render:topo": "node render.js --scene topo",
+    "preview": "node render.js --scene silk --preview true"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
